@@ -2,7 +2,7 @@
   version,
   versionString,
   src,
-  cargoLock,
+  cargoHash,
   lib,
   rustPlatform,
   pkg-config,
@@ -27,7 +27,7 @@
 assert libdisplay-info_0_2.version == "0.2.0";
 rustPlatform.buildRustPackage {
   pname = "niri";
-  inherit src version cargoLock;
+  inherit src version cargoHash;
   nativeBuildInputs = [
     pkg-config
     rustPlatform.bindgenHook
