@@ -3,13 +3,13 @@
   fetchFromGitHub,
 }:
 callPackage ../generic.nix rec {
-  version = "25.08-unstable-2025-11-26";
+  version = "25.11-unstable-2025-12-02";
   versionString = "${version} (commit ${src.rev})";
   src = fetchFromGitHub {
     owner = "YaLTeR";
     repo = "niri";
-    rev = "8370c539fb584f78924b826d0ac0ad8fa068cf95";
-    hash = "sha256-6Dud/oe0UnkgCe+JAGF+GjXl6S6ynpcAUYWCdbXjJL4=";
+    rev = "f874b2fce50e0f7ba21e270c86cfa168a1506b82";
+    hash = "sha256-TMs2Px19UAG06zITXAH7efl7X8G7BDyMCy1ilX/8wy0=";
   };
-  cargoHash = "sha256-EgvBaGQpP6iJbGAI46CdWDSf/XUZ0EgmvOFX4lx8Zb4=";
+  cargoHash = "sha256-X28M0jyhUtVtMQAYdxIPQF9mJ5a77v8jw1LKaXSjy7E=";
 }

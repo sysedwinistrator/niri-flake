@@ -3,13 +3,13 @@
   fetchFromGitHub,
 }:
 callPackage ../generic.nix rec {
-  version = "0.7-unstable-2025-11-21";
+  version = "0.8-unstable-2025-12-03";
   versionString = "${version} (commit ${src.rev})";
   src = fetchFromGitHub {
     owner = "Supreeeme";
     repo = "xwayland-satellite";
-    rev = "f379ff5722a821212eb59ada9cf8e51cb3654aad";
-    hash = "sha256-ceYEV6PnvUN8Zixao4gpPuN+VT3B0SlAXKuPNHZhqUY=";
+    rev = "1b918e29b419e89910014054e8b71d54c9235ea5";
+    hash = "sha256-ChH4nq0cMEEkzkHqKlQt5Z7wxrk8ybcEHuA1YKAYmV0=";
   };
-  cargoHash = "sha256-QAzAD7N8kReX/O7FSoYfDagOCOBmqTCu98okeYPmhBo=";
+  cargoHash = "sha256-HGrMjNIsUqh8AFtSABk615x4B9ygrVEn26V0G1kX/nA=";
 }
